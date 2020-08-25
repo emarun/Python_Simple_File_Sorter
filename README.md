@@ -1,4 +1,4 @@
-# Python Simple File classifier
+# Python Simple File Classifier
 
 ## :recycle: Classify files in a folder based on file extension.
 
@@ -25,8 +25,8 @@
 ### Clone this repository.
 
 ```
-git clone https://github.com/Alpha-1729/Python_Simple_File_Sorter.git
-cd Python_Simple_File_Sorter
+git clone https://github.com/Alpha-1729/Python_Simple_File_Classifier.git
+cd Python_Simple_File_Classifier
 ```
 
 <hr>
@@ -55,7 +55,7 @@ python main.py
 
 <ul>
 <li>After executing the script, a dialog box will popup to select the folder to sort.
-<a target="_blank" href="https://raw.githubusercontent.com/Alpha-1729/Python_Simple_File_Sorter/master/src/select.png">Click here</a>
+<a target="_blank" href="https://raw.githubusercontent.com/Alpha-1729/Python_Simple_File_Classifier/master/src/select.png">Click here</a>
 <li><b>Caution: </b> Go inside the folder and select the folder.
 </ul>
 
@@ -65,7 +65,7 @@ python main.py
 
 <ul>
 <li>A dialog box will popup to select the folder to move the content.
-<a target="_blank" href="https://raw.githubusercontent.com/Alpha-1729/Python_Simple_File_Sorter/master/src/move.png">Click here</a>
+<a target="_blank" href="https://raw.githubusercontent.com/Alpha-1729/Python_Simple_File_Classifier/master/src/move.png">Click here</a>
 <li><b>Caution: </b> Go inside the folder and select the folder.
 </ul>
 
@@ -75,7 +75,7 @@ python main.py
 
 <ul>
 <li>Output will look like this. 
-<a target="_blank" href="https://raw.githubusercontent.com/Alpha-1729/Python_Simple_File_Sorter/master/src/output.png">Click here</a>
+<a target="_blank" href="https://raw.githubusercontent.com/Alpha-1729/Python_Simple_File_Classifier/master/src/output.png">Click here</a>
 </ul>
 <hr>
 
