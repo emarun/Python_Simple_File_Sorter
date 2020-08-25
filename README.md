@@ -4,8 +4,11 @@
 
 <hr>
 <!-- Important -->
+
 # :beginner: Important
+
 ## Read This Properly
+
 <ul>
 <li>Create  a copy of the folder that you want to classify.
 <li>Then run this script.
