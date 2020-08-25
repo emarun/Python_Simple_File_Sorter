@@ -11,7 +11,7 @@ from tkinter import *
 
 def try_moving_file(filePath, filePathWithoutExtension, fileExtension, newPath):
     try:
-        shutil.copy(filePath, newPath)
+        shutil.move(filePath, newPath)
     except:
         # Convert file name -> file name with random number at the end.
         # Eg: people.txt -> people235.txt
@@ -19,7 +19,7 @@ def try_moving_file(filePath, filePathWithoutExtension, fileExtension, newPath):
             str(random.randint(0, 100000)) + \
             str(random.randint(0, 100000)) + "." + fileExtension
         os.rename(filePath, newName)
-        shutil.copy(newName, newPath)
+        shutil.move(newName, newPath)
 
 
 root = Tk()
