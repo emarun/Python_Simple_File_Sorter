@@ -54,7 +54,7 @@ python main.py
 ### Select the folder folder to classify.
 
 <ul>
-<li>After executing the script, a dialog box will popup to select the folder to sort.
+<li>After executing the script, a dialog box will popup to select the folder to classify.
 <a target="_blank" href="https://raw.githubusercontent.com/Alpha-1729/Python_Simple_File_Classifier/master/src/select.png">Click here</a>
 <li><b>Caution: </b> Go inside the folder and select the folder.
 </ul>
