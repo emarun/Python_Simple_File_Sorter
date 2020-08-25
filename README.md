@@ -5,6 +5,7 @@
 <hr>
 <!-- Important -->
 # :beginner: Important
+## Read This Properly
 <ul>
 <li>Create  a copy of the folder that you want to classify.
 <li>Then run this script.
@@ -13,6 +14,7 @@
 <li>If you want to do above mentioned steps, copy the content of system partition into another location and try this.
 <li>For selecting a folder, go inside the folder and select it.
 </ul>
+<hr>
 <!-- Installation -->
 
 # :beginner: Installation
@@ -72,6 +74,7 @@ python main.py
 <li>Output will look like this. 
 <a target="_blank" href="https://raw.githubusercontent.com/Alpha-1729/Python_Simple_File_Sorter/master/src/output.png">Click here</a>
 </ul>
+<hr>
 
 # :beginner: Note
 
