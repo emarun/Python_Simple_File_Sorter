@@ -15,9 +15,7 @@ def try_moving_file(filePath, filePathWithoutExtension, fileExtension, newPath):
     except:
         # Convert file name -> file name with current time at the end.
         # Eg: people.txt -> people21211235-2323.txt
-        newName = filePathWithoutExtension + \
-            str(time.time()).replace('.', '-') + \
-            "." + fileExtension
+        newName = filePathWithoutExtension + str(time.time()).replace('.', '-') + "." + fileExtension
         os.rename(filePath, newName)
         shutil.move(newName, newPath)
 
@@ -26,8 +24,7 @@ root = Tk()
 root.withdraw()  # To cancel poping out of the tkinter window.
 
 # Select the directory to classify the files.
-dirToSort = filedialog.askdirectory(
-    initialdir = os.getcwd(), title = 'Select the folder to classify')
+dirToSort = filedialog.askdirectory(initialdir = os.getcwd(), title = 'Select the folder to classify')
 
 # Select the directory to move classified files.
 dirToMove = filedialog.askdirectory(title = "Select folder to move")
