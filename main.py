@@ -9,55 +9,56 @@ from tkinter import filedialog
 from tkinter import *
 
 
-def try_moving_file(filePath, filePathWithoutExtension, fileExtension, newPath):
+def try_moving_file(file_path, file_path_without_extension, file_extension, new_path):
     try:
-        shutil.move(filePath, newPath)
+        shutil.move(file_path, new_path)
     except:
+        # If same file name exists, then rename the file name.
         # Convert file name -> file name with current time at the end.
         # Eg: people.txt -> people21211235-2323.txt
-        newName = filePathWithoutExtension + str(time.time()).replace('.', '-') + "." + fileExtension
-        os.rename(filePath, newName)
-        shutil.move(newName, newPath)
+        new_name = file_path_without_extension + str(time.time()).replace('.', '-') + "." + file_extension
+        os.rename(file_path, new_name)
+        shutil.move(new_name, new_path)
 
 
 root = Tk()
 root.withdraw()  # To cancel poping out of the tkinter window.
 
 # Select the directory to classify the files.
-dirToSort = filedialog.askdirectory(initialdir = os.getcwd(), title = 'Select the folder to classify')
+dir_to_sort = filedialog.askdirectory(initialdir = os.getcwd(), title = 'Select the folder to classify')
 
 # Select the directory to move classified files.
-dirToMove = filedialog.askdirectory(title = "Select folder to move")
-dirToMove = os.path.join(dirToMove, 'Sorted_Files')
+dir_to_move = filedialog.askdirectory(title = "Select folder to move")
+dir_to_move = os.path.join(dir_to_move, 'Sorted_Files')
 # Making a folder named "Sorted_Files"
 try:
-    os.makedirs(dirToMove)
+    os.makedirs(dir_to_move)
 except:
     pass
 
-fileExtensionSet = set()  # Set to store the file extensions.
+file_extension_set = set()  # Set to store the file extensions.
 
 # Looping through files and folder in the input folder.
 # And getting the file extension, and move file to the corresponding output folder.
-for rootDir, subDir, fileList in os.walk(dirToSort):
-    if fileList != []:
-        for file in fileList:
-            filePath = os.path.join(rootDir, file)
+for root_dir, sub_dir, file_list in os.walk(dir_to_sort):
+    if file_list != []:
+        for file in file_list:
+            file_path = os.path.join(root_dir, file)
 
             # Getting file extension.
-            filePathWithoutExtension, fileExtension = os.path.splitext(
-                filePath)
-            fileExtension = fileExtension.lower()
-            if fileExtension != '':
-                fileExtension = fileExtension.replace('.', '')
-                newPath = os.path.join(dirToMove, fileExtension)
-                if fileExtension in fileExtensionSet:
+            file_path_without_extension, file_extension = os.path.splitext(
+                file_path)
+            file_extension = file_extension.lower()
+            if file_extension != '':
+                file_extension = file_extension.replace('.', '')
+                new_path = os.path.join(dir_to_move, file_extension)
+                if file_extension in file_extension_set:
                     try_moving_file(
-                        filePath, filePathWithoutExtension, fileExtension, newPath)
+                        file_path, file_path_without_extension, file_extension, new_path)
                 else:
-                    os.mkdir(newPath)
-                    fileExtensionSet.add(fileExtension)
+                    os.mkdir(new_path)
+                    file_extension_set.add(file_extension)
                     try_moving_file(
-                        filePath, filePathWithoutExtension, fileExtension, newPath)
+                        file_path, file_path_without_extension, file_extension, new_path)
 
 print("Files classified successfully.")
