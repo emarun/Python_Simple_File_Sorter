@@ -1,16 +1,10 @@
-# Python Simple File Classifier
-
-## :recycle: Classify files in a folder based on file extension.
-
+# 🔰 Python Simple File Sorter
+## ♻ Sort files in a folder based on file extension.
 ---
 
-<!-- Important -->
-
-# :beginner: Important
-
-## :point_right: Read This Properly
-
-- Create a copy of the folder that you want to classify.
+## 🔰 Important
+### 👉 Read This Properly
+- Create a copy of the folder that you want to sort.
 - Then run this script.
 - Don't try this on OS partition in Windows.
 - Don't try this at root folder of linux.
@@ -19,53 +13,34 @@
 
 ---
 
-<!-- Installation -->
-
-# :beginner: Installation
-
-## :point_right: Clone this repository.
-
-```
+## 🔰 Installation
+### 👉 Clone this repository.
+```bash
 git clone https://github.com/Alpha-1729/Python_Simple_File_Classifier.git
+
 cd Python_Simple_File_Classifier
 ```
 
 ---
 
-# :beginner:Executing the script.
-
-## :point_right: Linux
-
+## 🔰 Executing the script.
+### 👉 Linux
 ```
 python3 main.py
 ```
-
-## :point_right: Windows
-
+### 👉Windows
 ```
 python main.py
 ```
 
 ---
 
-# :beginner:Follow these steps:
-
-## :point_right: Select the folder folder to classify.
-
-- After executing the script, a dialog box will popup to select the folder to classify. **[Select Input Folder Image]**
+## 🔰 Follow these steps:
+### 👉 Select the input folder.
+- After executing the script, a dialog box will popup to select the `Input Folder`.[See this](https://raw.githubusercontent.com/Alpha-1729/Python_Simple_File_Sorter/master/src/select_input_folder.png)
 - **Caution:** Go inside the folder and select the folder.
-
-## :point_right: Select the folder to move the classified content.
-
-- A dialog box will popup to select the folder to move the content. **[Select Output Folder Image]**
+### 👉 Select the output folder.
+- A dialog box will popup to select the `Output Folder`. [See this](https://raw.githubusercontent.com/Alpha-1729/Python_Simple_File_Sorter/master/src/select_output_folder.png)
 - **Caution:** Go inside the folder and select the folder.
-
-## :point_right: See the classified file.
-
-- Output will look like this. **[See Output Image]**
-
-<!-- My links -->
-
-[select input folder image]: https://raw.githubusercontent.com/Alpha-1729/Python_Simple_File_Classifier/master/src/select.png
-[select output folder image]: https://raw.githubusercontent.com/Alpha-1729/Python_Simple_File_Classifier/master/src/move.png
-[see output image]: https://raw.githubusercontent.com/Alpha-1729/Python_Simple_File_Classifier/master/src/output.png
+### 👉 See the final result.
+- Result will look like this.[See this](https://raw.githubusercontent.com/Alpha-1729/Python_Simple_File_Sorter/master/src/output.png)
