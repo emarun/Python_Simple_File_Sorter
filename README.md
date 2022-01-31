@@ -16,9 +16,9 @@
 ## 🔰 Installation
 ### 👉 Clone this repository.
 ```bash
-git clone https://github.com/Alpha-1729/Python_Simple_File_Classifier.git
+git clone git@github.com:Alpha-1729/Python_Simple_File_Sorter.git
 
-cd Python_Simple_File_Classifier
+cd Python_Simple_File_Sorter
 ```
 
 ---
