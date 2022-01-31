@@ -1,5 +1,5 @@
 #!usr/bin/python3
-# Script to classify files in a folder based on the file extensions.
+# Script to sort files in a folder based on the file extensions.
 
 # Importing all required libraries.
 import os
@@ -24,11 +24,11 @@ def try_moving_file(file_path, file_path_without_extension, file_extension, new_
 root = Tk()
 root.withdraw()  # To cancel poping out of the tkinter window.
 
-# Select the directory to classify the files.
-dir_to_sort = filedialog.askdirectory(initialdir = os.getcwd(), title = 'Select the folder to classify')
+# Select the input folder.
+dir_to_sort = filedialog.askdirectory(initialdir = os.getcwd(), title = 'Select the input folder to sort')
 
-# Select the directory to move classified files.
-dir_to_move = filedialog.askdirectory(title = "Select folder to move")
+# Select the output directory.
+dir_to_move = filedialog.askdirectory(title = "Select output directory")
 dir_to_move = os.path.join(dir_to_move, 'Sorted_Files')
 # Making a folder named "Sorted_Files"
 try:
@@ -61,4 +61,4 @@ for root_dir, sub_dir, file_list in os.walk(dir_to_sort):
                     try_moving_file(
                         file_path, file_path_without_extension, file_extension, new_path)
 
-print("Files classified successfully.")
+print("Files sorted successfully.")
