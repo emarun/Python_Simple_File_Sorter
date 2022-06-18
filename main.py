@@ -9,7 +9,7 @@ from tkinter import filedialog
 from tkinter import *
 
 
-def try_moving_file(file_path, file_path_without_extension, file_extension, new_path):
+def move_file(file_path, file_path_without_extension, file_extension, new_path):
     try:
         shutil.move(file_path, new_path)
     except:
@@ -53,12 +53,12 @@ for root_dir, sub_dir, file_list in os.walk(dir_to_sort):
                 file_extension = file_extension.replace('.', '')
                 new_path = os.path.join(dir_to_move, file_extension)
                 if file_extension in file_extension_set:
-                    try_moving_file(
+                    move_file(
                         file_path, file_path_without_extension, file_extension, new_path)
                 else:
                     os.mkdir(new_path)
                     file_extension_set.add(file_extension)
-                    try_moving_file(
+                    move_file(
                         file_path, file_path_without_extension, file_extension, new_path)
 
 print("Files sorted successfully.")
